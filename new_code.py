@@ -15,7 +15,7 @@ D_ji = {1: {1: 10, 2: 15, 3: 12},  # Daily demand for food item i on each day ob
          2: {1: 8, 2: 10, 3: 12},
          3: {1: 12, 2: 13, 3: 10}}
 w = {1: 0.1, 2: 0.08, 3: 0.12}  # Wastage coefficient of food item i
-B = 100  # Budget per day
+B = 10000  # Budget per day
 
 # Objective Function
 prob += lpSum(w[i] * x[i] for i in range(1, num_items + 1))
